@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Camera View</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Birds Detection System</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Upload Image or Open Camera</h2>
+            <input type="file" id="upload-image" accept="image/*">
+            <button id="open-camera">Open Live Camera</button>
+        </section>
+        <div id="camera-container">
+            <video id="video" width="640" height="480"></video>
+            <button id="capture-image">Capture Image</button>
+        </div>
+        <div id="image-container">
+            <img id="image" src="" alt="Captured Image">
+        </div>
+        <button id="detect-button">Detect</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
